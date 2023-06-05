@@ -1,6 +1,5 @@
-'use client'
 import './globals.css'
-import { ThemeProvider } from 'next-themes'
+import Providers from './providers'
 import { Nunito_Sans } from 'next/font/google'
 
 const nunito_sans = Nunito_Sans({
@@ -14,17 +13,15 @@ export const metadata = {
   description: 'Portfolio Website',
 }
 
-export default function RootLayout({
-  children,
-}: {
+export default function RootLayout({ children }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="en">
       <body className={nunito_sans.className}>
-        <ThemeProvider>
+        <Providers>
           <main className='bg-white dark:bg-primary text-black dark:text-white w-full h-full'>{children}</main>
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )

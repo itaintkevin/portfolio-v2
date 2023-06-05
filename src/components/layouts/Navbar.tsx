@@ -8,7 +8,7 @@ export default function Navbar() {
     { name: 'Contact', href: '#contact' },
   ]; 
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-between items-center my-10">
         <div className="text-2xl font-bold px-2">
             Kevin Paul
         </div>

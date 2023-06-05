@@ -92,7 +92,7 @@ const blockchain = [
 
 export default function Skills() {
   return (
-    <div>
+    <div className='my-10'>
         <h2 className='text-xl font-semibold text-center w-full'>Skills</h2>
         <div className="w-full flex">
             <section className="text-center w-1/3">

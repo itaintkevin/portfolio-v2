@@ -6,7 +6,7 @@ import Projects from '@/components/projects/Projects'
 export default function Home() {
   return (
     <main className="mx-auto flex flex-col lg:flex-row">
-      <section className="lg:fixed lg:top-0 flex flex-col justify-between lg:xl:w-[50%] lg:w-[70%] lg:h-screen py-10 2xl:px-16 xl:px-8 px-4">
+      <section className="dark:bg-primary lg:fixed lg:top-0 flex flex-col justify-between lg:xl:w-[50%] lg:w-[70%] lg:h-screen py-10 2xl:px-16 xl:px-8 px-4">
         <Navbar />
         <About />
         <Skills />

@@ -1,5 +1,5 @@
 import './globals.css'
-import Providers from './providers'
+import Providers from './Providers'
 import { Nunito_Sans } from 'next/font/google'
 
 const nunito_sans = Nunito_Sans({
@@ -20,7 +20,9 @@ export default function RootLayout({ children }: {
     <html lang="en">
       <body className={nunito_sans.className}>
         <Providers>
-          <main className='bg-white dark:bg-primary text-black dark:text-white w-full h-full'>{children}</main>
+          <main className='bg-white dark:bg-primary text-black dark:text-white w-full h-full'>
+            {children}
+          </main>
         </Providers>
       </body>
     </html>

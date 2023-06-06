@@ -178,7 +178,7 @@ const blockchain = [
 export default function Skills() {
   return (
     <div className='mt-10 xs:mx-0'>
-        <h2 className='text-xl font-semibold text-center w-full'>Skills</h2>
+        <h2 className='text-2xl font-semibold text-center w-full'>Skills</h2>
         <div className="hidden w-full sm:flex flex-wrap justify-center">
             <section className="text-center sm:w-1/3">
                 <div className="flex flex-wrap justify-center">

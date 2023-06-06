@@ -1,8 +1,6 @@
 "use client"
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { BsMoonStars, BsFillSunFill } from 'react-icons/bs'
+import { useState } from 'react'
 
 export default function Navbar() {
   const links = [
@@ -13,26 +11,11 @@ export default function Navbar() {
   ]; 
 
   const [nav, setNav] = useState(false);
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme, systemTheme } = useTheme()
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
-
+  
   const handleNav = () => {
     nav ? setNav(false) : setNav(true);
   }
 
-  const handleDarkMode = () => {
-    theme === 'dark' ? setTheme('light') : setTheme('dark')
-  }
-
-  const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <nav className="flex justify-between items-center w-full mb-10">
         <div className="text-2xl font-bold px-2">
@@ -46,9 +29,6 @@ export default function Navbar() {
             </li>
             ))}
         </ul>
-        <button onClick={handleDarkMode} className="text-xl mx-2">
-          {currentTheme === "dark" ? <BsFillSunFill className="cursor-pointer"/> :<BsMoonStars className="cursor-pointer"/>}
-        </button>
         <button className="sm:hidden mx-2" onClick={handleNav}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-8 h-8">
             <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

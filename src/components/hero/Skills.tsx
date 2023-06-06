@@ -183,7 +183,7 @@ export default function Skills() {
             <section className="text-center sm:w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {frontend.map((skill, index) => (
-                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 dark:bg-white rounded-lg p-2 m-2">
+                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2">
                         <Image src={skill.src} alt={skill.tag} width={40}/>
                     </div>    
                 ))}
@@ -193,7 +193,7 @@ export default function Skills() {
             <section className="text-center sm:border-x dark:sm:border-x-2 border-black dark:border-secondary/20 sm:w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {backend.map((skill, index) => (
-                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 dark:bg-white rounded-lg p-2 m-2">
+                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2">
                         <Image src={skill.src} alt={skill.tag} width={40}/>
                     </div>    
                 ))}
@@ -203,7 +203,7 @@ export default function Skills() {
             <section className="text-center sm:w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {blockchain.map((skill, index) => (
-                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 dark:bg-white rounded-lg p-2 m-2">
+                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2">
                         <Image src={skill.src} alt={skill.tag} width={40}/>
                     </div>    
                 ))}
@@ -213,7 +213,7 @@ export default function Skills() {
         </div>
         <div className="sm:hidden flex flex-wrap justify-center mx-auto">
             {skills.map((skill, index) => ( 
-                <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 dark:bg-white rounded-lg p-2 m-2 w-max">
+                <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max">
                     <Image src={skill.src} alt={skill.tag} width={40}/>
                 </div>  
             ))}

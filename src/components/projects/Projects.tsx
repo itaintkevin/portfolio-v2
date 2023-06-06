@@ -2,14 +2,12 @@ import ProjectCard from "./ProjectCard"
 
 const Project = () => {
   return (
-    <div className="p-10">
-      <section className="flex h-screen">
-        <section>
-          <div className="text-2xl font-semibold mx-5 mb-5">Projects</div>
+    <div>
+      <section className="flex flex-col h-screen">
+        <div className="text-2xl font-semibold mb-5">Projects</div>
+        <section className="grid xl:grid-cols-2 auto-rows-auto xl:gap-16 gap-8">
           <ProjectCard />
           <ProjectCard />
-        </section>
-        <section>
           <ProjectCard />
           <ProjectCard />
         </section>

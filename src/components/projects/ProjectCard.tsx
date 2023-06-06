@@ -3,8 +3,8 @@ import { BiLinkExternal } from 'react-icons/bi'
 
 const ProjectCard = () => {
   return (
-    <div className="relative bg-black text-white rounded-xl shadow-2xl w-[90%] min-h-[400px] mx-5 mb-10">
-        <div className="absolute -left-[10px] -bottom-[10px] border-2 border-black rounded-2xl shadow-lg w-[90%] min-h-[400px]"></div>
+    <div className="relative bg-black text-white rounded-xl shadow-2xl w-[100%] max-w-[300px] min-h-[400px]">
+        <div className="absolute -left-[10px] -bottom-[10px] border-2 border-black rounded-2xl shadow-lg w-[100%] max-w-[300px] min-h-[400px]"></div>
         <div className="flex justify-between items-center p-4">
             <p>View Repository</p>
             <div><BiLinkExternal/></div>
@@ -32,7 +32,7 @@ const ProjectCard = () => {
             <li className="bg-secondary text-black rounded-md w-min px-2 mr-2 mb-2">Crypto.js</li>
         </ul>
 
-        <Link href="/" className='absolute bottom-0 bg-accent-1 text-black text-center rounded-md w-[280px] p-2 m-4'>View Deployment</Link>
+        <Link href="/" className='absolute bottom-0 bg-accent-1 text-black text-center rounded-md max-w-[90%] p-2 m-4'>View Deployment</Link>
     </div>
   )
 }

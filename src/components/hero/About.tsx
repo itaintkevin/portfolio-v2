@@ -14,7 +14,7 @@ export default function About() {
 
     return (
         <div>
-            <h1 className="text-9xl">
+            <h1 className="2xl:text-9xl lg:text-7xl text-6xl">
                 Full Stack Developer
             </h1>
             <p className="text-lg font-semibold pt-10 mx-2">

@@ -92,13 +92,13 @@ const blockchain = [
 
 export default function Skills() {
   return (
-    <div className='my-10'>
+    <div className='mt-10'>
         <h2 className='text-xl font-semibold text-center w-full'>Skills</h2>
         <div className="w-full flex">
             <section className="text-center w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {frontend.map((skill, index) => (
-                    <div key={index} className="bg-primary/50 rounded-xl p-2 m-2">
+                    <div key={index} className="border border-primary/40 bg-primary/10 rounded-lg p-2 m-2">
                         <Image src={skill.src} alt={skill.tag} width={40}/>
                     </div>    
                 ))}
@@ -108,7 +108,7 @@ export default function Skills() {
             <section className="text-center border-x border-black w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {backend.map((skill, index) => (
-                    <div key={index} className="bg-primary/50 rounded-xl p-2 m-2">
+                    <div key={index} className="border border-primary/40 bg-primary/10 rounded-lg p-2 m-2">
                         <Image src={skill.src} alt={skill.tag} width={40}/>
                     </div>    
                 ))}
@@ -118,7 +118,7 @@ export default function Skills() {
             <section className="text-center w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {blockchain.map((skill, index) => (
-                    <div key={index} className="bg-primary/50 rounded-xl p-2 m-2">
+                    <div key={index} className="border border-primary/40 bg-primary/10 rounded-lg p-2 m-2">
                         <Image src={skill.src} alt={skill.tag} width={40}/>
                     </div>    
                 ))}

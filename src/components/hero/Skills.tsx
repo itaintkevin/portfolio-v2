@@ -19,6 +19,81 @@ export const ipfs = require("../../../public/assets/skills/ipfs.png")
 
 import Image from 'next/image'
 
+const skills = [
+    {
+        src: next,
+        tag: "Next.js"
+    },
+    {
+        src: typescript,
+        tag: "TypeScript"
+    },
+    {
+        src: redux,
+        tag: "Redux"
+    },
+    {
+        src: tailwind,
+        tag: "Tailwind CSS"
+    },
+    {
+        src: material,
+        tag: "Material UI"
+    },
+    {
+        src: figma,
+        tag: "Figma"
+    },
+    {
+        src: nodejs,
+        tag: "Node.js"
+    },
+    {
+        src: express,
+        tag: "Express"
+    },
+    {
+        src: query,
+        tag: "React Query"
+    },
+    {
+        src: mongo,
+        tag: "MongoDB"
+    },
+    {
+        src: firebase,
+        tag: "Firebase"
+    },
+    {
+        src: sanity,
+        tag: "Sanity"
+    },
+    {
+        src: solidity,
+        tag: "Solidity"
+    },
+    {
+        src: hardhat,
+        tag: "Hardhat"
+    },
+    {
+        src: truffle,
+        tag: "Truffle"
+    },
+    {
+        src: ethers,
+        tag: "Ethers.js"
+    },
+    {
+        src: web3,
+        tag: "Web3.js"
+    },
+    {
+        src: ipfs,
+        tag: "IPFS"
+    }
+]
+
 const frontend = [
     {
         src: next,
@@ -102,9 +177,9 @@ const blockchain = [
 
 export default function Skills() {
   return (
-    <div className='mt-10 xs:mx-0 xxs:mx-10 xxxs:mx-8'>
+    <div className='mt-10 xs:mx-0'>
         <h2 className='text-xl font-semibold text-center w-full'>Skills</h2>
-        <div className="w-full flex flex-wrap justify-center">
+        <div className="hidden w-full sm:flex flex-wrap justify-center">
             <section className="text-center sm:w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {frontend.map((skill, index) => (
@@ -135,6 +210,13 @@ export default function Skills() {
                 </div>
                 <p className="hidden sm:block font-semibold">Blockchain</p>
             </section>
+        </div>
+        <div className="sm:hidden flex flex-wrap justify-center mx-auto">
+            {skills.map((skill, index) => ( 
+                <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 dark:bg-white rounded-lg p-2 m-2 w-max">
+                    <Image src={skill.src} alt={skill.tag} width={40}/>
+                </div>  
+            ))}
         </div>
     </div>
   )

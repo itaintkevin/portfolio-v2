@@ -3,6 +3,7 @@ export const typescript = require("../../../public/assets/skills/typescript.png"
 export const redux = require("../../../public/assets/skills/redux.png");
 export const tailwind = require("../../../public/assets/skills/tailwind.png");
 export const material = require("../../../public/assets/skills/material.png");
+export const figma = require("../../../public/assets/skills/figma.png");
 export const nodejs = require("../../../public/assets/skills/nodejs.png");
 export const express = require("../../../public/assets/skills/express.png");
 export const query = require("../../../public/assets/skills/query.png");
@@ -14,6 +15,7 @@ export const hardhat = require("../../../public/assets/skills/hardhat.png");
 export const truffle = require("../../../public/assets/skills/truffle.png");
 export const ethers = require("../../../public/assets/skills/ethers.png");
 export const web3 = require("../../../public/assets/skills/web3.png");
+export const ipfs = require("../../../public/assets/skills/ipfs.png")
 
 import Image from 'next/image'
 
@@ -37,6 +39,10 @@ const frontend = [
     {
         src: material,
         tag: "Material UI"
+    },
+    {
+        src: figma,
+        tag: "Figma"
     }
 ]
 
@@ -87,15 +93,19 @@ const blockchain = [
     {
         src: web3,
         tag: "Web3.js"
+    },
+    {
+        src: ipfs,
+        tag: "IPFS"
     }
 ]
 
 export default function Skills() {
   return (
-    <div className='mt-10'>
+    <div className='mt-10 xs:mx-0 xxs:mx-10 xxxs:mx-8'>
         <h2 className='text-xl font-semibold text-center w-full'>Skills</h2>
-        <div className="w-full flex">
-            <section className="text-center w-1/3">
+        <div className="w-full flex flex-wrap justify-center">
+            <section className="text-center sm:w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {frontend.map((skill, index) => (
                     <div key={index} className="border border-primary/40 bg-primary/10 rounded-lg p-2 m-2">
@@ -103,9 +113,9 @@ export default function Skills() {
                     </div>    
                 ))}
                 </div>
-                <p className="font-semibold">Frontend</p>
+                <p className="hidden sm:block font-semibold">Frontend</p>
             </section>
-            <section className="text-center border-x border-black w-1/3">
+            <section className="text-center sm:border-x border-black sm:w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {backend.map((skill, index) => (
                     <div key={index} className="border border-primary/40 bg-primary/10 rounded-lg p-2 m-2">
@@ -113,9 +123,9 @@ export default function Skills() {
                     </div>    
                 ))}
                 </div>
-                <p className="font-semibold">Backend</p>
+                <p className="hidden sm:block font-semibold">Backend</p>
             </section>
-            <section className="text-center w-1/3">
+            <section className="text-center sm:w-1/3">
                 <div className="flex flex-wrap justify-center">
                 {blockchain.map((skill, index) => (
                     <div key={index} className="border border-primary/40 bg-primary/10 rounded-lg p-2 m-2">
@@ -123,7 +133,7 @@ export default function Skills() {
                     </div>    
                 ))}
                 </div>
-                <p className="font-semibold">Blockchain</p>
+                <p className="hidden sm:block font-semibold">Blockchain</p>
             </section>
         </div>
     </div>

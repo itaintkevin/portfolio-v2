@@ -5,13 +5,13 @@ import Projects from '@/components/projects/Projects'
 
 export default function Home() {
   return (
-    <main className="mx-auto flex">
-      <section className="fixed top-0 flex flex-col justify-between xl:w-[50%] w-[70%] h-screen py-10 2xl:px-16 xl:px-8 px-4">
+    <main className="mx-auto flex flex-col lg:flex-row">
+      <section className="lg:fixed lg:top-0 flex flex-col justify-between lg:xl:w-[50%] lg:w-[70%] lg:h-screen py-10 2xl:px-16 xl:px-8 px-4">
         <Navbar />
         <About />
         <Skills />
       </section>
-      <section className="relative xl:left-[50%] left-[70%] xl:w-[50%] w-[30%] py-10 2xl:px-16 xl:px-8 px-4">
+      <section className="relative xl:left-[50%] lg:left-[70%] xl:w-[50%] lg:w-[30%] py-10 2xl:px-16 xl:px-8 px-4">
         <Projects />
       </section>
     </main>

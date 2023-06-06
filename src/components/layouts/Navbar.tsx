@@ -54,7 +54,7 @@ export default function Navbar() {
             <path stroke-Linecap="round" stroke-Linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
-        <div className={`fixed ${nav ? "top-0 transition ease-in duration-300" : "-translate-y-full transition ease-out duration-500"} left-0 z-10 bg-white shadow-lg rounded-b-2xl border-b border-black/20 w-full`}>
+        <div className={`fixed ${nav ? "top-0 transition ease-in duration-300" : "-translate-y-full transition ease-out duration-500"} left-0 z-10 bg-white dark:bg-primary dark:text-white shadow-lg dark:shadow-2xl rounded-b-2xl border-b border-black/20 w-full`}>
           <button className="fixed right-0 mt-10 mr-6" onClick={handleNav}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-8 h-8">
               <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12" />

@@ -12,12 +12,12 @@ const ExperienceCard = () => {
         </div>
         
         <div className='p-4'>
-            <h3 className="text-3xl">
+            <h3 className="text-3xl font-semibold">
                 Full Stack Developer
             </h3>
             <h4 className="text-2xl">Codelance Devs</h4>
             <p className="text-xs py-2">
-                Built ~ Jan 2023
+                Jan 2023 ~ Apr 2023
             </p>
             <p className='text-secondary dark:text-black'>
             A one-time secret message 

@@ -177,41 +177,9 @@ const blockchain = [
 
 export default function Skills() {
   return (
-    <div className='lg:mt-5 mt-10 xs:mx-0'>
-        <h2 className='text-2xl font-semibold text-center w-full'>Skills</h2>
-        <div className="hidden w-full sm:flex flex-wrap justify-center">
-            <section className="text-center border-b-2 border-primary rounded-md hover:bg-secondary/10 hover:border-white hover:transition hover:ease-in-out hover:duration-1000 sm:w-1/3">
-                <div className="grid grid-cols-3 auto-rows-auto justify-items-center">
-                {frontend.map((skill, index) => (
-                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max max-w-[60px]">
-                        <Image src={skill.src} alt={skill.tag} width={40} className="w-full h-full"/>
-                    </div>    
-                ))}
-                </div>
-                <p className="hidden sm:block font-semibold">Frontend</p>
-            </section>
-            <section className="text-center border-b-2 border-primary rounded-md hover:bg-secondary/10 hover:border-white hover:transition hover:ease-in-out hover:duration-1000 sm:w-1/3">
-                <div className="grid grid-cols-3 auto-rows-auto justify-items-center">
-                {backend.map((skill, index) => (
-                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max max-w-[60px]">
-                        <Image src={skill.src} alt={skill.tag} width={40} className="w-full h-full"/>
-                    </div>    
-                ))}
-                </div>
-                <p className="hidden sm:block font-semibold">Backend</p>
-            </section>
-            <section className="text-center border-b-2 border-primary rounded-md hover:bg-secondary/10 hover:border-white hover:transition hover:ease-in-out hover:duration-1000 sm:w-1/3">
-                <div className="grid grid-cols-3 auto-rows-auto justify-items-center">
-                {blockchain.map((skill, index) => (
-                    <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max max-w-[60px]">
-                        <Image src={skill.src} alt={skill.tag} width={40} className="w-full h-full"/>
-                    </div>    
-                ))}
-                </div>
-                <p className="hidden sm:block font-semibold">Blockchain</p>
-            </section>
-        </div>
-        <div className="sm:hidden flex flex-wrap justify-center mx-auto">
+    <div className='pt-16 2xl:mx-10'>
+        <h2 className='text-2xl font-semibold text-center w-full mt-2 mb-5'>Skills</h2>
+        <div className="flex flex-wrap justify-center mx-auto">
             {skills.map((skill, index) => ( 
                 <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max">
                     <Image src={skill.src} alt={skill.tag} width={40}/>

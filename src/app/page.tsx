@@ -29,9 +29,9 @@ export default function Home() {
               <section className="dark:bg-primary lg:fixed lg:top-0 flex flex-col justify-between lg:xl:w-[50%] lg:w-[70%] lg:h-screen lg:py-16 pt-16 mb-4 2xl:px-16 xl:px-8 px-4">
                 <Navbar />
                 <About />
-                <Skills />
               </section>
               <section className="relative overflow-x-hidden xl:left-[50%] lg:left-[70%] xl:w-[50%] lg:w-[30%] 2xl:px-16 xl:px-8 px-4">
+                <Skills />
                 <Projects />
                 <Experiences />
                 <Footer />

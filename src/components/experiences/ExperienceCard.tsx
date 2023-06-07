@@ -4,8 +4,8 @@ import { BiLinkExternal } from 'react-icons/bi'
 
 const ExperienceCard = () => {
   return (
-    <div className="relative flex flex-col justify-between bg-black dark:bg-white text-white dark:text-black rounded-xl shadow-2xl w-full min-h-[350px] mb-10">
-        <div className="absolute -left-[10px] -bottom-[10px] border-b-2 border-l-2 border-black dark:border-white rounded-2xl shadow-lg w-full min-h-[350px]"></div>
+    <div className="relative flex flex-col justify-between bg-black dark:bg-white text-white dark:text-black rounded-xl shadow-2xl w-[100%] max-w-[300px] min-h-[400px]">
+        <div className="absolute -left-[10px] -bottom-[10px] border-b-2 border-l-2 border-black dark:border-white rounded-2xl shadow-lg w-[100%] max-w-[300px] h-full"></div>
         <div className="flex justify-between items-center font-semibold p-4">
             <p>INTERNSHIP</p>
             <div><BiLinkExternal/></div>

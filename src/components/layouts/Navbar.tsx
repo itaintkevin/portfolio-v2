@@ -1,12 +1,14 @@
 "use client"
 import Link from 'next/link'
+import Image from 'next/image'
+import me from '../../../public/assets/me.jpg'
 import { useState } from 'react'
 
 export default function Navbar() {
   const links = [
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
+    { name: 'Experience', href: '#experiences' },
     { name: 'Contact', href: '#contact' },
   ]; 
 
@@ -18,9 +20,10 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center w-full mb-10">
-        <div className="text-2xl font-bold px-2">
-            Kevin Paul
-        </div>
+        {/* <div className="text-2xl font-bold px-2">
+            KP
+        </div> */}
+        <Image className="w-10 h-10 rounded-full mx-2" src={me} alt="Kevin Paul"/>
         <div className="bg-black dark:bg-secondary flex-grow py-[1px]"></div>
         <ul className="hidden sm:flex justify-end">
             {links.map((link, index) => (

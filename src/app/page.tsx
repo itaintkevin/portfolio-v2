@@ -8,6 +8,7 @@ import ThemeSwitcher from './ThemeSwitcher'
 import SplashScreen from './SplashScreen'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import Footer from '@/components/footer/Footer'
 
 export default function Home() {
   const pathName = usePathname()
@@ -30,9 +31,10 @@ export default function Home() {
                 <About />
                 <Skills />
               </section>
-              <section className="relative overflow-x-hidden xl:left-[50%] lg:left-[70%] xl:w-[50%] lg:w-[30%] py-16 2xl:px-16 xl:px-8 px-4">
+              <section className="relative overflow-x-hidden xl:left-[50%] lg:left-[70%] xl:w-[50%] lg:w-[30%] 2xl:px-16 xl:px-8 px-4">
                 <Projects />
                 <Experiences />
+                <Footer />
               </section>
             </main>
         )}

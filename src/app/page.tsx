@@ -8,7 +8,8 @@ import ThemeSwitcher from './ThemeSwitcher'
 import SplashScreen from './SplashScreen'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import Footer from '@/components/footer/Footer'
+import Footer from '@/components/layouts/Footer'
+import Contact from '@/components/contact/Contact'
 
 export default function Home() {
   const pathName = usePathname()
@@ -34,6 +35,7 @@ export default function Home() {
                 <Skills />
                 <Projects />
                 <Experiences />
+                <Contact />
                 <Footer />
               </section>
             </main>

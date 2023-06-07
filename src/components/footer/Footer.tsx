@@ -37,7 +37,7 @@ const Footer = () => {
 
 	return (
 		<footer className='dark:text-white mt-16'>
-			<div className='container mx-auto flex flex-col flex-wrap min-[1400px]:justify-center sm:flex-row py-[3%]'>
+			<div className='container mx-auto flex flex-col flex-wrap min-[1400px]:justify-center min-[1024px]:justify-start min-[768px]:justify-center sm:flex-row py-[3%]'>
 				<div>
 					<div className='mb-3 flex items-center'>
             <Image className="w-10 h-10 rounded-full mr-2" src={me} alt="Kevin Paul"/>
@@ -50,7 +50,7 @@ const Footer = () => {
 						<p>All rights reserved.</p>
 					</p>
 				</div>
-				<div className='min-[1280px]:mx-5'>
+				<div className='min-[1280px]:mx-5 min-[1024px]:mx-0 min-[640px]:mx-5'>
 					<h4 className='min-[1400px]:mb-3 flex items-center text-lg font-medium h-10'>Links</h4>
 					<nav className='flex flex-wrap'>
 						{navOptions.map((option, index) => (

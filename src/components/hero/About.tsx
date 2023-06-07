@@ -16,14 +16,14 @@ export default function About() {
     return (
         <div id="about" className='relative'>
             <GradientBubble/>
-            <h1 className="2xl:text-9xl lg:text-7xl text-6xl">
+            <h1 className="2xl:text-[9vh] xl:text-[8vh] lg:text-[7vh] text-6xl mx-2">
                 Hey! I&apos;m 
                 <br/>
                 <span className="underline underline-offset-3 decoration-accent-1">Kevin</span>
                 <span>&nbsp;</span>
                 <span className="underline underline-offset-3 decoration-accent-1">Paul</span>
             </h1>
-            <p className="text-lg font-semibold pt-10 mx-2">
+            <p className="text-lg font-semibold xl:pt-10 lg:pt-5 pt-10 mx-2">
                 Full Stack Developer.
                 <br/>
                 Transitioning to Web3.
@@ -34,7 +34,7 @@ export default function About() {
                 <br/>
                 Checkout my <Link className="underline underline-offset-3 decoration-accent-1 animate-pulse" href="">Resume</Link>.
             </p>
-            <p className="flex mt-2 mx-2">
+            <p className="flex mt-[1%] mx-2">
                 {socials.map((social, index) => (
                     <Link key={index} href={social.link} className='bg-black dark:bg-secondary text-white dark:text-black text-lg rounded-full p-1.5 mr-2'>
                         {social.logo}

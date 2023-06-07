@@ -19,7 +19,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="flex justify-between items-center w-full mb-10">
+    <nav className="flex justify-between items-center w-full lg:mb-5 mb-10">
         {/* <div className="text-2xl font-bold px-2">
             KP
         </div> */}

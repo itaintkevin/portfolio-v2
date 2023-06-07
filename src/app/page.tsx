@@ -26,7 +26,7 @@ export default function Home() {
         ) : (
             <main className="mx-auto flex flex-col lg:flex-row">
               <ThemeSwitcher />
-              <section className="dark:bg-primary lg:fixed lg:top-0 flex flex-col justify-between lg:xl:w-[50%] lg:w-[70%] lg:h-screen pt-16 mb-4 2xl:px-16 xl:px-8 px-4">
+              <section className="dark:bg-primary lg:fixed lg:top-0 flex flex-col justify-between lg:xl:w-[50%] lg:w-[70%] lg:h-screen lg:py-16 pt-16 mb-4 2xl:px-16 xl:px-8 px-4">
                 <Navbar />
                 <About />
                 <Skills />

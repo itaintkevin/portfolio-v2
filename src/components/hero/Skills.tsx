@@ -178,7 +178,7 @@ const blockchain = [
 export default function Skills() {
   return (
     <div className='pt-16 2xl:mx-10'>
-        <h2 className='text-2xl font-semibold text-center w-full mt-2 mb-5'>Skills</h2>
+        <h2 className='text-2xl font-semibold text-center underline underline-offset-3 decoration-accent-1 w-full mt-2 mb-5'>Skills</h2>
         <div className="flex flex-wrap justify-center mx-auto">
             {skills.map((skill, index) => ( 
                 <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max">

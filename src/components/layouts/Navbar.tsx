@@ -43,7 +43,7 @@ export default function Navbar() {
               <path stroke-Linecap="round" stroke-Linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <ul className="flex flex-col justify-center w-full h-full mt-14 my-4">
+          <ul className="flex flex-col justify-center w-full h-full mt-14 mb-8">
               {links.map((link, index) => (
               <li key={index} className="text-xl font-bold border-b-2 border-accent-1 line-gap-2 my-2 mx-6">
                   <Link href={link.href} className="">{link.name}</Link>

@@ -36,7 +36,7 @@ const Footer = () => {
 ];
 
 	return (
-		<footer className='dark:text-white'>
+		<footer className='dark:text-white mt-16'>
 			<div className='container mx-auto flex flex-col flex-wrap min-[1400px]:justify-center sm:flex-row py-[3%]'>
 				<div>
 					<div className='mb-3 flex items-center'>

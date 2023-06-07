@@ -16,14 +16,14 @@ export default function About() {
     return (
         <div id="about" className='relative'>
             <GradientBubble/>
-            <h1 className="2xl:text-9xl xl:text-8xl lg:text-7xl text-6xl mx-2">
+            <h1 className="z-10 2xl:text-9xl xl:text-8xl lg:text-7xl text-6xl mx-2">
                 Hey! I&apos;m 
                 <br/>
                 <span className="underline underline-offset-3 decoration-accent-1">Kevin</span>
                 <span>&nbsp;</span>
                 <span className="underline underline-offset-3 decoration-accent-1">Paul</span>
             </h1>
-            <p className="text-lg font-semibold xl:pt-10 lg:pt-5 pt-10 mx-2">
+            <p className="z-10 text-lg font-semibold xl:pt-10 lg:pt-5 pt-10 mx-2">
                 Full Stack Developer.
                 <br/>
                 Transitioning to Web3.

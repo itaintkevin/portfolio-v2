@@ -19,6 +19,41 @@ module.exports = {
         'xxs': '375px',
         'xs': '490px'
       },
+      animation: {
+        blob1: "blob1 7s infinite",
+        blob2: "blob2 7s infinite",
+        blob3: "blob3 7s infinite"
+      },
+      keyframes: {
+        blob1: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(100px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        blob2: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(-30px, 100px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-60px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+      },
     },
   },
   plugins: [],

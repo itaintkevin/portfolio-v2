@@ -32,7 +32,7 @@ const About = async () => {
                             <li key={index} className="text-lg font-semibold mx-2">{bio}</li>
                         ))}
                     </ul>
-                    <p className="text-lg font-semibold mx-2">Checkout my <Link className="underline underline-offset-3 decoration-accent-1 animate-pulse" href="">Resume</Link>.</p>
+                    <p className="text-lg font-semibold mx-2">Checkout my <Link className="underline underline-offset-3 decoration-accent-1 animate-pulse" href="https://drive.google.com/file/u/2/d/1DPiD1LcvzfbbDc8y4Ul80hRIKbXhuXO-/view">Resume</Link>.</p>
                 </p>
                 <p className="flex lg:mt-10 mt-2 mx-2">
                     {socials.map((social, index) => (

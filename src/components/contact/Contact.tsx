@@ -15,8 +15,8 @@ const contact = () => {
           </div>
         </div>
         <div className="flex justify-between my-5">
-          <input type="text" className="rounded-md w-full p-3 border border-[#3B3B3B] outline-none focus:border-white/20" placeholder="Enter text here"/>
-          <button className="bg-accent-1 text-primary rounded-md py-3 px-4 ml-2">
+          <input type="text" className="rounded-md w-full p-3 border border-[#3B3B3B] outline-none focus:dark:border-white/20 focus:shadow-md" placeholder="Enter text here"/>
+          <button className="bg-accent-1 border-2 border-primary/40 text-primary rounded-md py-3 px-4 ml-2">
             <AiOutlineSend/>
           </button>
         </div>

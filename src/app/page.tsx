@@ -14,7 +14,7 @@ import Contact from '@/components/contact/Contact'
 export default function Home() {
   const pathName = usePathname()
   const isHome = pathName === '/'
-  const [isLoading, setIsLoading] = useState(isHome)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     if (isLoading) return

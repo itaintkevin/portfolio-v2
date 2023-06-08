@@ -94,99 +94,25 @@ const skills = [
     }
 ]
 
-const frontend = [
-    {
-        src: next,
-        tag: "Next.js"
-    },
-    {
-        src: typescript,
-        tag: "TypeScript"
-    },
-    {
-        src: redux,
-        tag: "Redux"
-    },
-    {
-        src: tailwind,
-        tag: "Tailwind CSS"
-    },
-    {
-        src: material,
-        tag: "Material UI"
-    },
-    {
-        src: figma,
-        tag: "Figma"
-    }
-]
-
-const backend = [
-    {
-        src: nodejs,
-        tag: "Node.js"
-    },
-    {
-        src: express,
-        tag: "Express"
-    },
-    {
-        src: query,
-        tag: "React Query"
-    },
-    {
-        src: mongo,
-        tag: "MongoDB"
-    },
-    {
-        src: firebase,
-        tag: "Firebase"
-    },
-    {
-        src: sanity,
-        tag: "Sanity"
-    },
-]
-
-const blockchain = [
-    {
-        src: solidity,
-        tag: "Solidity"
-    },
-    {
-        src: hardhat,
-        tag: "Hardhat"
-    },
-    {
-        src: truffle,
-        tag: "Truffle"
-    },
-    {
-        src: ethers,
-        tag: "Ethers.js"
-    },
-    {
-        src: web3,
-        tag: "Web3.js"
-    },
-    {
-        src: ipfs,
-        tag: "IPFS"
-    }
-]
-
 export default function Skills() {
   return (
+    <>
     <div className='pt-16 2xl:mx-10'>
         <h2 className='text-2xl font-semibold text-center underline underline-offset-3 decoration-accent-1 w-full mt-2 mb-5'>Skills</h2>
         <div className="flex flex-wrap justify-center mx-auto">
             {skills.map((skill, index) => ( 
-                <div key={index} className="border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max">
-                    <Image src={skill.src} alt={skill.tag} width={40}/>
-                </div>  
+                <>
+                    <div key={index} className="group relative inline-block border dark:border-2 border-primary/40 dark:border-secondary/20 bg-primary/10 rounded-lg p-2 m-2 w-max">
+                        <Image src={skill.src} alt={skill.tag} width={40}/>
+                        <span className="absolute hidden group-hover:flex -left-[22px] -top-2 -translate-y-full w-[100px] flex justify-center py-1 bg-[#3B3B3B] rounded-md text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-[#3B3B3B]">
+                            {skill.tag}
+                        </span>
+                    </div>  
+                </>
             ))}
         </div>
     </div>
+    </>
   )
 }
 

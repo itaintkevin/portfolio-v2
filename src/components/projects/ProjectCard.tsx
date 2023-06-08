@@ -10,12 +10,12 @@ interface ProjectProps {
 
 const ProjectCard = ({ key, project }: ProjectProps) => {
   return (
-    <div className="relative flex flex-col justify-between bg-black dark:bg-white text-white dark:text-black rounded-xl shadow-2xl w-[100%] max-w-[300px] min-h-[400px]">
-        <div className="absolute -left-[10px] -bottom-[10px] border-b-2 border-l-2 border-black dark:border-white rounded-2xl shadow-lg w-[100%] max-w-[300px] h-full"></div>        
+    <div className="relative z-10 flex flex-col justify-between bg-black dark:bg-white text-white dark:text-black rounded-xl shadow-2xl w-[100%] max-w-[300px] min-h-[400px]">
+        <div className="absolute -z-10 -left-[10px] -bottom-[10px] border-b-2 border-l-2 border-black dark:border-white rounded-2xl shadow-lg w-[100%] max-w-[300px] h-full"></div>        
         <div className='px-4'>
             <div className="flex justify-between items-center font-semibold py-4">
                 <p>View Repository</p>
-                <Link href={project.repository}><BiLinkExternal/></Link>
+                <Link className="cursor-pointer" href={project.repository}><BiLinkExternal/></Link>
             </div>
             <h3 className="text-3xl">
                 {project.name}
@@ -33,7 +33,7 @@ const ProjectCard = ({ key, project }: ProjectProps) => {
             </ul>
         </div>
 
-        <Link href={project.deployment} className='bg-accent-1 text-black font-semibold text-center rounded-md max-w-[90%] p-2 m-4'>View Deployment</Link>
+        <Link href={project.deployment} className='bg-accent-1 text-black font-semibold text-center rounded-md cursor-pointer max-w-[90%] p-2 m-4'>View Deployment</Link>
     </div>
   )
 }

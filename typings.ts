@@ -28,5 +28,6 @@ export interface Experiences {
     role: string,
     work: string,
     certificate: string,
+    website: string,
     skills: string[]
 }

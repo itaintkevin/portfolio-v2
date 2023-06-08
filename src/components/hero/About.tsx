@@ -14,7 +14,6 @@ const About = async () => {
         { logo: <AiOutlineGithub/>, link: 'https://github.com/itaintkevin' },
         { logo: <AiOutlineMail/>, link: 'mailto:kevinjacobdev@gmail.com' },
     ];
-    console.log(about);
     return (
         <>
         {about.map((about: AboutType, index:number) => (

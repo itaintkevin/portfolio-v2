@@ -49,6 +49,7 @@ export async function getExperiences() {
             type,
             "slug": slug.current,
             organization,
+            website,
             role,
             date,
             work,

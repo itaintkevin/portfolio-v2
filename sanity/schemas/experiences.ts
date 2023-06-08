@@ -55,5 +55,10 @@ export default defineType({
       title: 'Certificate',
       type: 'url',
     }),
+    defineField({
+      name: 'website',
+      title: 'Website',
+      type: 'url',
+    }),
   ]
 })

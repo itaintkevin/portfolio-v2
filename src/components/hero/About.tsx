@@ -31,7 +31,7 @@ const About = async () => {
             </div>
             <p className="flex lg:mt-10 mt-2 mx-2 animate-fadeUp">
                 {socials.map((social, index) => (
-                    <Link key={index} href={social.link} className='bg-black dark:bg-secondary text-white dark:text-black text-lg rounded-full p-1.5 mr-2'>
+                    <Link key={index} href={social.link} target="_blank" className='bg-black dark:bg-secondary text-white dark:text-black text-lg rounded-full p-1.5 mr-2'>
                         {social.logo}
                     </Link>
                 ))}

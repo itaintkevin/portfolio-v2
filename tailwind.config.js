@@ -23,8 +23,8 @@ module.exports = {
         blob1: "blob1 7s infinite",
         blob2: "blob2 7s infinite",
         blob3: "blob3 7s infinite",
-        fadeUp: "fadeUp 0.5s ease-in-out",
-        fadeDown: "fadeDown 0.5s ease-in-out",
+        fadeUp: "fadeUp 3.25s ease-in-out",
+        fadeDown: "fadeDown 3.25s ease-in-out",
         splashScreen: "splashScreen 3s ease-in-out forwards",
         splashScreenText: "splashScreenText .8s ease-in-out forwards"
       },

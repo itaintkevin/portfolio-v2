@@ -5,12 +5,12 @@ export interface AboutType {
     bio: string[],
 }
 
-export interface Skills {
+export interface SkillsType {
     _id: string,
     skills: string[],
 }
 
-export interface Projects {
+export interface ProjectsType {
     _id: string,
     name: string,
     repository: string,
@@ -20,7 +20,7 @@ export interface Projects {
     skills: string[]
 }
 
-export interface Experiences {
+export interface ExperiencesType {
     _id: string,
     type: string,
     organization: string,

@@ -4,7 +4,7 @@ import { groq } from 'next-sanity'
 
 export async function getAbout() {
     return client.fetch(
-        groq`*[_type == "about"]{
+        groq`*[_type == "about"][0]{
             _id,
             name,
             salutation,

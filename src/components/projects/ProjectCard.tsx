@@ -1,22 +1,21 @@
 "use client"
 import Link from 'next/link'
 import { BiLinkExternal } from 'react-icons/bi'
-import { Projects } from '../../../typings'
+import { ProjectsType } from '../../../typings'
 
 interface ProjectProps {
-    key: number,
-    project: Projects
+    project: ProjectsType
 }
 
-const ProjectCard = ({ key, project }: ProjectProps) => {
+const ProjectCard = ({ project }: ProjectProps) => {
   return (
-    <div className="relative z-10 flex flex-col justify-between bg-black dark:bg-white text-white dark:text-black rounded-xl shadow-2xl w-[100%] max-w-[300px] min-h-[400px]">
+    <div className="relative z-10 flex flex-col justify-between bg-black dark:bg-white text-white dark:text-black hover:-translate-y-2.5 transition ease-in-out duration:300 hover:transition hover:ease-in-out hover:duration-300 rounded-xl shadow-2xl w-[100%] max-w-[300px] min-h-[400px] animate-fadeUp">
         <div className="absolute -z-10 -left-[10px] -bottom-[10px] border-b-2 border-l-2 border-black dark:border-white rounded-2xl shadow-lg w-[100%] max-w-[300px] h-full"></div>        
         <div className='px-4'>
-            <div className="flex justify-between items-center font-semibold py-4">
+            <Link href={project.repository} className="flex justify-between items-center font-semibold hover:scale-[1.03] transition ease-in-out duration:300 hover:transition hover:ease-in-out hover:duration-300 cursor-pointer py-4">
                 <p>View Repository</p>
-                <Link className="cursor-pointer" href={project.repository}><BiLinkExternal/></Link>
-            </div>
+                <BiLinkExternal className=''/>
+            </Link>
             <h3 className="text-3xl">
                 {project.name}
             </h3>
@@ -33,7 +32,7 @@ const ProjectCard = ({ key, project }: ProjectProps) => {
             </ul>
         </div>
 
-        <Link href={project.deployment} className='bg-accent-1 text-black font-semibold text-center rounded-md cursor-pointer max-w-[90%] p-2 m-4'>View Deployment</Link>
+        <Link href={project.deployment} className='bg-accent-1 text-black font-semibold text-center border-2 border-accent-1 transition ease-in-out duration:300 hover:text-white hover:dark:text-primary hover:bg-white hover:transition hover:ease-in-out hover:duration-300 rounded-md cursor-pointer max-w-[90%] p-2 m-4'>View Deployment</Link>
     </div>
   )
 }

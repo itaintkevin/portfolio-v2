@@ -22,7 +22,11 @@ module.exports = {
       animation: {
         blob1: "blob1 7s infinite",
         blob2: "blob2 7s infinite",
-        blob3: "blob3 7s infinite"
+        blob3: "blob3 7s infinite",
+        fadeUp: "fadeUp 0.5s ease-in-out",
+        fadeDown: "fadeDown 0.5s ease-in-out",
+        splashScreen: "splashScreen 3s ease-in-out forwards",
+        splashScreenText: "splashScreenText .8s ease-in-out forwards"
       },
       keyframes: {
         blob1: {
@@ -53,7 +57,37 @@ module.exports = {
             transform: "translate(0px, 0px) scale(1)",
           },
         },
-      },
+        fadeUp: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(30px) scale(0.9)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0px) scale(1)",
+          }
+        },
+        fadeDown: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-30px) scale(0.9)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0px) scale(1)",
+          }
+        },
+        splashScreen: {
+          "0%": { top: "0", },
+          "33%": { top: "0", },
+          "100%": { top: "-150%", }
+        },
+        splashScreenText: {
+          "0%": { top: "2rem", opacity: 0 },
+          "80%": { top: "-0.4rem", opacity: 1 },
+          "100%": { top: "1" }
+        }
+      }
     },
   },
   plugins: [],

@@ -11,8 +11,8 @@ import me from '../../../public/assets/me.jpg'
 const Footer = () => {
 	const navOptions = [
 		{
-			name: 'About',
-			url: '/#about',
+			name: 'Skills',
+			url: '/#skills',
 		},
 		{
 			name: 'Projects',

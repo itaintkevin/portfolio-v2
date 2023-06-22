@@ -29,9 +29,9 @@ const Footer = () => {
 	];
 
   const socials = [
-    { logo: <AiOutlineTwitter/>, link: 'https://twitter.com/it_aint_kevin' },
-    { logo: <FaLinkedinIn/>, link: 'https://www.linkedin.com/in/itaintkevin' },
-    { logo: <AiOutlineGithub/>, link: 'https://github.com/itaintkevin' },
+    { logo: <AiOutlineTwitter/>, link: 'https://twitter.com/kevinpauljacob' },
+    { logo: <FaLinkedinIn/>, link: 'https://www.linkedin.com/in/kevinpauljacob' },
+    { logo: <AiOutlineGithub/>, link: 'https://github.com/kevinpauljacob' },
     { logo: <AiOutlineMail/>, link: 'mailto:kevinjacobdev@gmail.com' },
 ];
 
